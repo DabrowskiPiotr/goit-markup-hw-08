@@ -1,4 +1,3 @@
-# goit-markup-hw-01
+# goit-markup-hw-02
 
-Praca domowa nr 1 - HTML - GoIT
-Wykorzystaj tylko znaczniki HTML do wykonania zadania domowego #1, bez stylów CSS.
+Praca domowa nr 2 - GoIT
