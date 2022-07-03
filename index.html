@@ -4,61 +4,72 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Main Page</title>
   </head>
   <body>
     <header>
       <nav>
-        <h3>WebStudio</h3>
+        <h3>
+          <a href="index.html"
+            ><span class="first_word">Web</span
+            ><span class="second_word">Studio</span></a
+          >
+        </h3>
         <ul>
-          <li>Agencja</li>
-          <li>Portfolio</li>
-          <li>Kontakt</li>
+          <li><a href="agencja.html" class="link_1">Agencja</a></li>
+          <li><a href="portfolio.html" class="link_2">Portfolio</a></li>
+          <li><a href="kontakt.html" class="link_3">Kontakt</a></li>
         </ul>
       </nav>
       <div>
-        <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-        <a href="tel:+48111111111">+48 111 111 111</a>
+        <a href="mailto:info@devstudio.com" class="link_4"
+          >info@devstudio.com</a
+        >
+        <a href="tel:+48111111111" class="link_5">+48 111 111 111</a>
       </div>
-
-      <div>
+    </header>
+    <main>
+      <div class="index_main_container">
         <h1>
           EFEKTYWNE ROZWIĄZANIA <br />
           DLA WASZEGO BIZNESU
         </h1>
-        <button type="button">Zamów usługę</button>
+        <button type="button" class="button_service">Zamów usługę</button>
       </div>
-    </header>
-
-    <main>
-      <ul>
-        <li>
-          <h5>LOREM IPSUM</h5>
-          <pre>
-Lorem ipsum dolor sit amet, consectetur 
-adipiscing elit. Nam vel arcu sem. Sed 
-non sodales dui. Interdum et malesuada</pre
-          >
-        </li>
-        <li>
-          <h5>LOREM IPSUM</h5>
-          <pre>
-Lorem ipsum dolor sit amet, consectetur 
-adipiscing elit. Nam vel arcu sem. Sed 
-non sodales dui. Interdum et malesuada</pre
-          >
-        </li>
-        <li>
-          <h5>LOREM IPSUM</h5>
-          <pre>
-Lorem ipsum dolor sit amet, consectetur 
-adipiscing elit. Nam vel arcu sem. Sed 
-non sodales dui. Interdum et malesuada</pre
-          >
-        </li>
-      </ul>
-
-      <div id="what_we_do">
+      <div class="features">
+        <ul>
+          <li class="feature_1">
+            <p class="feature_title">LOREM IPSUM</p>
+            <p class="post_text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+              arcu sem. Sed non sodales dui. Interdum et malesuada
+            </p>
+          </li>
+          <li class="feature_2">
+            <p class="feature_title">LOREM IPSUM</p>
+            <p class="post_text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+              arcu sem. Sed non sodales dui. Interdum et malesuada
+            </p>
+          </li>
+          <li class="feature_3">
+            <p class="feature_title">LOREM IPSUM</p>
+            <p class="post_text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+              arcu sem. Sed non sodales dui. Interdum et malesuada
+            </p>
+          </li>
+          <li class="feature_4">
+            <p class="feature_title">LOREM IPSUM</p>
+            <p class="post_text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+              arcu sem. Sed non sodales dui. Interdum et malesuada
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="what_we_do">
         <h2>Czym się zajmujemy</h2>
         <ul>
           <li>
@@ -67,6 +78,7 @@ non sodales dui. Interdum et malesuada</pre
               alt="hands on keybord"
               width="370"
               height="294"
+              class="box_1"
             />
           </li>
           <li>
@@ -75,6 +87,7 @@ non sodales dui. Interdum et malesuada</pre
               alt="phone and laptop"
               width="370"
               height="294"
+              class="box_2"
             />
           </li>
           <li>
@@ -83,15 +96,16 @@ non sodales dui. Interdum et malesuada</pre
               alt="graphic tablet"
               width="370"
               height="294"
+              class="box_3"
             />
           </li>
         </ul>
       </div>
 
-      <div id="team">
-        <h2>Nasz zespół</h2>
+      <div class="team">
+        <h4>Nasz zespół</h4>
         <ul>
-          <li>
+          <li class="team_card_1">
             <figure>
               <img
                 src="images/img1.jpg"
@@ -105,7 +119,7 @@ non sodales dui. Interdum et malesuada</pre
               </figcaption>
             </figure>
           </li>
-          <li>
+          <li class="team_card_2">
             <figure>
               <img
                 src="images/img2.jpg"
@@ -119,7 +133,7 @@ non sodales dui. Interdum et malesuada</pre
               </figcaption>
             </figure>
           </li>
-          <li>
+          <li class="team_card_3">
             <figure>
               <img
                 src="images/img3.jpg"
@@ -133,7 +147,7 @@ non sodales dui. Interdum et malesuada</pre
               </figcaption>
             </figure>
           </li>
-          <li>
+          <li class="team_card_4">
             <figure>
               <img
                 src="images/img4.jpg"
@@ -150,5 +164,16 @@ non sodales dui. Interdum et malesuada</pre
         </ul>
       </div>
     </main>
-
-    
+    <footer>
+      <h5>
+        <a href="index.html"
+          ><span class="third_word">Web</span
+          ><span class="fourth_word">Studio</span></a
+        >
+      </h5>
+      <address>m. Warszawa, Aleje Jerozolimskie 21</address>
+      <a href="mailto:info@example.com" class="mail">info@example.com</a>
+      <a href="tel:+48111111111" class="tel">+48 111 111 111</a>
+    </footer>
+  </body>
+</html>
