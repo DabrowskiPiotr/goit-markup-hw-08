@@ -5,80 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <title>Main Page</title>
   </head>
   <body>
     <header>
       <nav>
-        <h3>
-          <a href="index.html"
-            ><span class="first_word">Web</span
-            ><span class="second_word">Studio</span></a
+        <div>
+          <a class="webstudio-link-1" href="index.html"
+            ><span>Web</span>Studio</a
           >
-        </h3>
-        <ul>
-          <li><a href="agencja.html" class="link_1">Agencja</a></li>
-          <li><a href="portfolio.html" class="link_2">Portfolio</a></li>
-          <li><a href="kontakt.html" class="link_3">Kontakt</a></li>
+        </div>
+        <ul class="list">
+          <li><a href="agencja.html">Agencja</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
         </ul>
       </nav>
       <div>
-        <a href="mailto:info@devstudio.com" class="link_4"
-          >info@devstudio.com</a
-        >
-        <a href="tel:+48111111111" class="link_5">+48 111 111 111</a>
+        <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+        <a href="tel:+48111111111">+48 111 111 111</a>
       </div>
     </header>
     <main>
-      <div class="index_main_container">
+      <div class="main">
         <h1>
           EFEKTYWNE ROZWIĄZANIA <br />
           DLA WASZEGO BIZNESU
         </h1>
-        <button type="button" class="button_service">Zamów usługę</button>
+        <button type="button" class="button-service">Zamów usługę</button>
       </div>
-      <div class="features">
-        <ul>
-          <li class="feature_1">
-            <p class="feature_title">LOREM IPSUM</p>
-            <p class="post_text">
+      <div>
+        <ul class="list">
+          <li>
+            <h4>LOREM IPSUM</h4>
+            <p class="features-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li class="feature_2">
-            <p class="feature_title">LOREM IPSUM</p>
-            <p class="post_text">
+          <li>
+            <h4>LOREM IPSUM</h4>
+            <p class="features-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li class="feature_3">
-            <p class="feature_title">LOREM IPSUM</p>
-            <p class="post_text">
+          <li>
+            <h4>LOREM IPSUM</h4>
+            <p class="features-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li class="feature_4">
-            <p class="feature_title">LOREM IPSUM</p>
-            <p class="post_text">
+          <li>
+            <h4>LOREM IPSUM</h4>
+            <p class="features-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
         </ul>
       </div>
-      <div class="what_we_do">
+      <div>
         <h2>Czym się zajmujemy</h2>
-        <ul>
+        <ul class="list">
           <li>
             <img
               src="images/box1.jpg"
               alt="hands on keybord"
               width="370"
               height="294"
-              class="box_1"
             />
           </li>
           <li>
@@ -87,7 +88,6 @@
               alt="phone and laptop"
               width="370"
               height="294"
-              class="box_2"
             />
           </li>
           <li>
@@ -96,17 +96,16 @@
               alt="graphic tablet"
               width="370"
               height="294"
-              class="box_3"
             />
           </li>
         </ul>
       </div>
 
       <div class="team">
-        <h4>Nasz zespół</h4>
-        <ul>
-          <li class="team_card_1">
-            <figure>
+        <h3>Nasz zespół</h3>
+        <ul class="list">
+          <li>
+            <figure class="team-card">
               <img
                 src="images/img1.jpg"
                 alt="mężczyzna ciemna koszula broda okulary"
@@ -114,13 +113,13 @@
                 height="260"
               />
               <figcaption>
-                <p>John Doe</p>
-                <p>Product Designer</p>
+                <p class="name">John Doe</p>
+                <p class="job-title">Product Designer</p>
               </figcaption>
             </figure>
           </li>
-          <li class="team_card_2">
-            <figure>
+          <li>
+            <figure class="team-card">
               <img
                 src="images/img2.jpg"
                 alt="kobieta frontend developer blond włosy"
@@ -128,13 +127,13 @@
                 height="260"
               />
               <figcaption>
-                <p>John Doe</p>
-                <p>Frontend Developer</p>
+                <p class="name">John Doe</p>
+                <p class="job-title">Frontend Developer</p>
               </figcaption>
             </figure>
           </li>
-          <li class="team_card_3">
-            <figure>
+          <li>
+            <figure class="team-card">
               <img
                 src="images/img3.jpg"
                 alt="mężczyzna marketing jasna koszula"
@@ -142,13 +141,13 @@
                 height="260"
               />
               <figcaption>
-                <p>John Doe</p>
-                <p>Marketing</p>
+                <p class="name">John Doe</p>
+                <p class="job-title">Marketing</p>
               </figcaption>
             </figure>
           </li>
-          <li class="team_card_4">
-            <figure>
+          <li>
+            <figure class="team-card">
               <img
                 src="images/img4.jpg"
                 alt="ui designer w okularach czarny t-shirt"
@@ -156,8 +155,8 @@
                 height="260"
               />
               <figcaption>
-                <p>John Doe</p>
-                <p>UI Designer</p>
+                <p class="name">John Doe</p>
+                <p class="job-title">UI Designer</p>
               </figcaption>
             </figure>
           </li>
@@ -165,15 +164,14 @@
       </div>
     </main>
     <footer>
-      <h5>
-        <a href="index.html"
-          ><span class="third_word">Web</span
-          ><span class="fourth_word">Studio</span></a
-        >
-      </h5>
-      <address>m. Warszawa, Aleje Jerozolimskie 21</address>
-      <a href="mailto:info@example.com" class="mail">info@example.com</a>
-      <a href="tel:+48111111111" class="tel">+48 111 111 111</a>
+      <div>
+        <a class="webstudio-link-2" href="index.html"><span>Web</span>Studio</a>
+        <ul class="list">
+          <li><address>m. Warszawa, Aleje Jerozolimskie 21</address></li>
+          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          <li><a href="tel:+48111111111">+48 111 111 111</a></li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
