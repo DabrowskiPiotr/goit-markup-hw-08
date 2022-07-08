@@ -1,94 +1,109 @@
 body {
   font-family: "Roboto", "Helvetica", "Arial", "sans-serif";
   background: #ffffff;
+  color: #212121;
+  --portfolio-button-color: #f5f4fa;
+  --active-link-color: #2196f3;
+  --mail-phone-color: #757575;
+  --cards-txt-color: #757575;
+  --cards-bg-color: #ffffff;
 }
 
 .webstudio-link-1 {
-  color: #2196f3;
+  color: #000000;
   font-family: "Raleway";
   font-size: 26px;
   font-weight: 700;
   text-decoration: none;
   line-height: 1.19;
 }
-.webstudio-link-1 span {
+.webstudio-link-1:hover {
   color: #000000;
 }
 
-.webstudio-link-2 {
+.webstudio-link-1 span {
   color: #2196f3;
+}
+
+.webstudio-link-2 {
+  color: #ffffff;
   font-family: "Raleway";
   font-size: 26px;
   font-weight: 700;
   text-decoration: none;
   line-height: 1.19;
 }
-.webstudio-link-2 span {
+
+.webstudio-link-2:hover {
   color: #ffffff;
+}
+
+.webstudio-link-2 span {
+  color: #2196f3;
 }
 
 .list {
   list-style: none;
 }
 
-a[href="agencja.html"] {
+.agency {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--main-txt-color);
   text-decoration: none;
 }
 
-a[href="portfolio.html"] {
+.portfolio {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--main-txt-color);
   text-decoration: none;
 }
 
-a[href="kontakt.html"] {
+.contact {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--main-txt-color);
   text-decoration: none;
 }
 
-a[href="mailto:info@devstudio.com"] {
+.mail {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--mail-phone-color);
   text-decoration: none;
 }
 
-a[href="tel:+48111111111"] {
+.phone {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--mail-phone-color);
   text-decoration: none;
 }
 a:hover {
-  color: #2196f3;
+  color: var(--active-link-color);
 }
 
 a:focus {
-  color: #2196f3;
+  color: var(--active-link-color);
 }
 
 button:hover {
-  background-color: #2196f3;
+  background-color: var(--active-link-color);
   color: #ffffff;
 }
 button:focus {
-  background-color: #2196f3;
+  background-color: var(--active-link-color);
   color: #ffffff;
 }
 .button-service {
@@ -96,6 +111,7 @@ button:focus {
   height: 50px;
   background: #2196f3;
   border-radius: 4px;
+  border: 0px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -106,8 +122,9 @@ button:focus {
 .portfolio-button-1 {
   width: 121px;
   height: 38px;
-  background: #f5f4fa;
+  background: var(--portfolio-button-color);
   border-radius: 4px;
+  border: 0px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -117,8 +134,9 @@ button:focus {
 .portfolio-button-2 {
   width: 93px;
   height: 38px;
-  background: #f5f4fa;
+  background: var(--portfolio-button-color);
   border-radius: 4px;
+  border: 0px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -129,8 +147,9 @@ button:focus {
 .portfolio-button-3 {
   width: 114px;
   height: 38px;
-  background: #f5f4fa;
+  background: var(--portfolio-button-color);
   border-radius: 4px;
+  border: 0px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -141,8 +160,9 @@ button:focus {
 .portfolio-button-4 {
   width: 91px;
   height: 38px;
-  background: #f5f4fa;
+  background: var(--portfolio-button-color);
   border-radius: 4px;
+  border: 0px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -153,8 +173,9 @@ button:focus {
 .portfolio-button-5 {
   width: 121px;
   height: 38px;
-  background: #f5f4fa;
+  background: var(--portfolio-button-color);
   border-radius: 4px;
+  border: 0px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -162,7 +183,7 @@ button:focus {
   cursor: pointer;
 }
 
-h1 {
+.main-header {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -172,30 +193,28 @@ h1 {
   text-align: center;
 }
 
-h2 {
+.what-we-do-header {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
-  color: #212121;
+
   text-align: center;
 }
 
-h3 {
+.team-header {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
-  color: #212121;
   text-align: center;
 }
 
-h4 {
+.feature-header {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  color: #212121;
 }
 .features-text {
   font-size: 14px;
@@ -209,14 +228,13 @@ h4 {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #212121;
 }
 
 .job-title {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--cards-txt-color);
 }
 
 .project-name {
@@ -224,14 +242,13 @@ h4 {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: #212121;
 }
 
 .tool {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--cards-txt-color);
 }
 
 .main {
@@ -239,10 +256,10 @@ h4 {
 }
 
 .team {
-  background: #f5f4fa;
+  background: var(--portfolio-button-color);
 }
 .team-card {
-  background: #ffffff;
+  background: var(--cards-bg-color);
   width: 270px;
   height: 368px;
   text-align: center;
@@ -251,7 +268,7 @@ h4 {
 .project-card {
   width: 370px;
   height: 404px;
-  background: #ffffff;
+  background: var(--cards-bg-color);
 }
 
 footer {
