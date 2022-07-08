@@ -1,12 +1,17 @@
-body {
-  font-family: "Roboto", "Helvetica", "Arial", "sans-serif";
-  background: #ffffff;
-  color: #212121;
+:root {
+  --main-txt-color: #212121;
+  --main-bg-color: #ffffff;
   --portfolio-button-color: #f5f4fa;
   --active-link-color: #2196f3;
   --mail-phone-color: #757575;
   --cards-txt-color: #757575;
   --cards-bg-color: #ffffff;
+}
+
+body {
+  font-family: "Roboto", "Helvetica", "Arial", "sans-serif";
+  background: var(--main-bg-color);
+  color: var(--main-txt-color);
 }
 
 .webstudio-link-1 {
