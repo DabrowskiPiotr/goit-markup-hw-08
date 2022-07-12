@@ -144,6 +144,7 @@ body {
 .project-item {
   flex-basis: calc (100% - 2 * 30px / 3);
 }
+
 .agency {
   font-weight: 500;
   font-size: 14px;
@@ -400,6 +401,7 @@ button:focus {
   letter-spacing: 0.06em;
   margin-top: 20px;
   margin-bottom: 4px;
+  margin-left: 24px;
 }
 
 .tool {
@@ -409,6 +411,8 @@ button:focus {
   color: var(--cards-txt-color);
   padding: 0px;
   margin: 0px;
+  margin-left: 24px;
+  margin-bottom: 20px;
 }
 
 .main-container {
@@ -446,6 +450,7 @@ button:focus {
   height: 404px;
   background: var(--cards-bg-color);
   margin: 0px;
+  border: 1px solid #eeeeee;
 }
 
 .header-container {
