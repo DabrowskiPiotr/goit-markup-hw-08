@@ -15,6 +15,13 @@
 ::after {
   box-sizing: border-box;
 }
+.section {
+  margin-bottom: var(--main-space-sections);
+}
+
+.section-2 {
+  margin-top: var(--main-space-sections);
+}
 
 body {
   font-family: "Roboto", "Helvetica", "Arial", "sans-serif";
@@ -78,10 +85,9 @@ body {
   justify-content: center;
   gap: 30px;
   padding: 0px;
-  margin-top: 50px;
-  margin-bottom: var(--main-space-sections);
   margin-left: auto;
   margin-right: auto;
+  margin-top: 0px;
 }
 
 .feature-list {
@@ -112,7 +118,7 @@ body {
   display: flex;
   gap: 8px;
   justify-content: center;
-  margin-top: var(--main-space-sections);
+  margin: 0px;
   padding: 0px;
 }
 
@@ -337,7 +343,6 @@ button:focus {
 }
 
 .feature-section {
-  margin-top: var(--main-space-sections);
   margin-left: auto;
   margin-right: auto;
   width: var(--interior-width-container);
@@ -346,7 +351,6 @@ button:focus {
 }
 
 .what-we-do-section {
-  margin-top: var(--main-space-sections);
   width: var(--interior-width-container);
   margin-left: auto;
   margin-right: auto;
@@ -359,7 +363,6 @@ button:focus {
   margin-top: var(--main-space-sections);
   margin-left: auto;
   margin-right: auto;
-  height: 648px;
   display: flex;
   justify-content: center;
 }
@@ -369,10 +372,12 @@ button:focus {
   margin-right: auto;
   display: flex;
   justify-content: center;
+  margin-top: 50px;
 }
 
 .footer-container {
   width: var(--interior-width-container);
+  height: 192px;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -465,7 +470,6 @@ button:focus {
 
 footer {
   background: #2f303a;
-  height: 252px;
 }
 address {
   font-style: normal;
