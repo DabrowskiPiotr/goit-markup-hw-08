@@ -30,7 +30,6 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 1600px;
-  
 }
 
 .webstudio-link-1 {
@@ -425,7 +424,7 @@ button:focus {
 
 .main-container {
   background: #2f303a40;
-background-image: url(goit-markup-hw-04/images/img14.jpg);
+  background-image: url("images/img14.jpg");
   height: 600px;
   display: flex;
   justify-content: center;
@@ -446,7 +445,7 @@ background-image: url(goit-markup-hw-04/images/img14.jpg);
 .team-card {
   background: var(--cards-bg-color);
   width: 270px;
-  height: 368px;
+  height: 428px;
   text-align: center;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -485,4 +484,67 @@ address {
 .navigation {
   display: inline-flex;
   margin-left: 93px;
+}
+
+.contact-icon {
+  fill: #757575;
+}
+.mail-icon {
+  height: 12px;
+  width: 16px;
+}
+.phone-icon {
+}
+
+.feature-icon-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+
+.team-sm-icons-bg {
+  fill: #2196f3;
+}
+
+.team-sm-icons {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  
+
+}
+
+.team-sm-icons-container {
+  width: 206px;
+  height: 56px;
+
+}
+
+.our-clients-header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-align: center;
+  padding-top: var(--main-space-sections);
+  margin: 0px;
+}
+
+.our-clients-list {
+  
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
+
+.our-clients-item {
+  <svg id="icon-instagram-2" width="32" height="32" viewBox="0 0 32 32" x="0" y="352">
 }
