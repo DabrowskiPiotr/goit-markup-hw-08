@@ -27,7 +27,10 @@ body {
   font-family: "Roboto", "Helvetica", "Arial", "sans-serif";
   background: var(--main-bg-color);
   color: var(--main-txt-color);
-  margin: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1600px;
+  
 }
 
 .webstudio-link-1 {
@@ -421,7 +424,8 @@ button:focus {
 }
 
 .main-container {
-  background: #2f303a;
+  background: #2f303a40;
+background-image: url(goit-markup-hw-04/images/img14.jpg);
   height: 600px;
   display: flex;
   justify-content: center;
