@@ -593,10 +593,12 @@ address {
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  fill: #afb1b8;
 }
 .our-clients-item:hover,
 .our-clients-item:focus {
   border: 1px solid #2196f3;
+  fill: #2196f3;
 }
 
 .contact-list:hover {
