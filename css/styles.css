@@ -104,7 +104,7 @@ button:focus {
 
 .contact-list {
   display: inline-flex;
-  padding-left: 345px;
+  justify-content: flex-end;
   padding-top: 32px;
   padding-bottom: 32px;
   gap: 30px;
@@ -148,6 +148,7 @@ button:focus {
   fill: var(--icon-color);
   display: flex;
   gap: 10px;
+  align-items: flex-end;
 }
 
 .phone {
@@ -158,6 +159,9 @@ button:focus {
   color: var(--mail-phone-color);
   text-decoration: none;
   fill: var(--icon-color);
+  display: flex;
+  gap: 10px;
+  align-items: flex-end;
 }
 
 .agency:hover,
