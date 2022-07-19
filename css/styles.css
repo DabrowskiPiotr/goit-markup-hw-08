@@ -644,13 +644,13 @@ address {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  fill: hsl(127, 86%, 48%);
+  fill: #AFB1B8;
 }
 
 .sm-circle-bg:hover,
 .sm-circle-bg:focus {
   background-color: #2196f3;
-  fill: yellow;
+  fill: #ffffff;
   cursor: pointer;
 }
 
