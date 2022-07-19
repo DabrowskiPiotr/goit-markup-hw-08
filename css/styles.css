@@ -645,11 +645,13 @@ address {
   align-items: center;
   border-radius: 50%;
   background-color: #ffffff;
+  fill: hsl(127, 86%, 48%);
 }
 
 .sm-circle-bg:hover,
 .sm-circle-bg:focus {
   background-color: #2196f3;
+  fill: yellow;
 }
 
 .footer-sm-circle-bg {
@@ -668,7 +670,7 @@ address {
 }
 
 .sm-icon {
-  fill: hsl(0, 83%, 45%);
+  
 }
 
 .sm-icon:hover,
