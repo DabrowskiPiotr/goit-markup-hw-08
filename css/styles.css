@@ -175,6 +175,7 @@ button:focus {
   color: var(--active-link-color);
   cursor: pointer;
   fill: var(--active-link-color);
+  cursor: pointer;
 }
 
 /*footer section*/
@@ -219,6 +220,7 @@ address {
 .footer-sm-circle-bg:hover,
 .footer-sm-circle-bg:focus {
   background: var(--active-link-color);
+  cursor: pointer;
 }
 
 .join-us {
@@ -447,6 +449,7 @@ address {
 .our-clients-item:focus {
   border: 1px solid var(--active-link-color);
   fill: var(--active-link-color);
+  cursor: pointer;
 }
 
 .sm-circle-bg {
@@ -632,10 +635,10 @@ address {
   height: 404px;
   background: var(--cards-bg-color);
   margin: 0px;
+  cursor: pointer;
   border: 1px solid #eeeeee;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  cursor: pointer;
 }
 
 .main-portfolio {
