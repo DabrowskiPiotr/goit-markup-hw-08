@@ -200,29 +200,27 @@ body {
   fill: #afb1b8;
 }
 
+.agency:hover,
+.agency:focus,
+.portfolio:hover,
+.portfolio:focus,
+.contact:hover,
+.contact:focus,
 .mail:hover,
 .mail:focus,
 .phone:hover,
-.phone:focus,
-a:hover,
-a:focus {
+.phone:focus {
   color: var(--active-link-color);
   cursor: pointer;
   fill: #2196f3;
 }
 
- {
-  color: var(--active-link-color);
-}
-
-button:hover {
-  background-color: var(--active-link-color);
-  color: #ffffff;
-}
+button:hover,
 button:focus {
   background-color: var(--active-link-color);
   color: #ffffff;
 }
+
 .button-service {
   margin: auto;
   width: 200px;
