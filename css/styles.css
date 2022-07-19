@@ -198,11 +198,11 @@ body {
   text-decoration: none;
 }
 
-a:hover {
+.mail:hover {
   color: var(--active-link-color);
 }
 
-a:focus {
+.phone:focus {
   color: var(--active-link-color);
 }
 
@@ -599,16 +599,6 @@ address {
   border: 1px solid #2196f3;
 }
 
-.icon-ig:hover,
-.icon-ig:focus {
-  fill: #2196f3;
-}
-.icon-ig {
-  width: 106px;
-  height: 60px;
-  fill: #afb1b8;
-}
-
 .contact-list:hover {
   fill: #2196f3;
   border-color: #2196f3;
@@ -662,6 +652,7 @@ address {
   align-items: center;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
+  fill: #ffffff;
 }
 
 .footer-sm-circle-bg:hover,
