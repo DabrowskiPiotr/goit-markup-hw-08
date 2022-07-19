@@ -32,20 +32,22 @@
           </nav>
 
           <ul class="contact-list">
-            <li>
-              <svg class="contact-icon mail-icon">
-                <use href="images/icons.svg#icon-envelope"></use>
-              </svg>
+            <li class="contact-list-mail-link">
               <a class="mail" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
+                ><svg class="contact-icon mail-icon">
+                  <use href="images/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
             </li>
 
-            <li>
-              <svg class="contact-icon phone-icon">
-                <use href="images/icons.svg#icon-smartphone"></use>
-              </svg>
-              <a class="phone" href="tel:+48111111111">+48 111 111 111</a>
+            <li class="contact-list-phone-link">
+              <a class="phone" href="tel:+48111111111">
+                <svg class="contact-icon phone-icon">
+                  <use href="images/icons.svg#icon-smartphone"></use>
+                </svg>
+                +48 111 111 111</a
+              >
             </li>
           </ul>
         </div>
@@ -64,7 +66,7 @@
             <li>
               <div class="feature-icon-bg">
                 <svg class="feature-icon" height="70" width="70">
-                  <use href="images/icons.svg#icon-antena"></use>
+                  <use href="images/icons.svg#icon-antenna-1"></use>
                 </svg>
               </div>
               <h4 class="feature-header">LOREM IPSUM</h4>
@@ -76,7 +78,7 @@
             <li>
               <div class="feature-icon-bg">
                 <svg class="feature-icon" height="70" width="70">
-                  <use href="images/icons.svg#icon-clock"></use>
+                  <use href="images/icons.svg#icon-clock-1"></use>
                 </svg>
               </div>
               <h4 class="feature-header">LOREM IPSUM</h4>
@@ -88,7 +90,7 @@
             <li>
               <div class="feature-icon-bg">
                 <svg class="feature-icon" height="70" width="70">
-                  <use href="images/icons.svg#icon-laptop"></use>
+                  <use href="images/icons.svg#icon-diagram-1"></use>
                 </svg>
               </div>
               <h4 class="feature-header">LOREM IPSUM</h4>
@@ -159,52 +161,25 @@
                     <p class="name">John Doe</p>
                     <p class="job-title">Product Designer</p>
                     <div class="team-sm-icons-container">
-                      <ul class="team-sm-icons">
-                        <li>
-                          <svg
-                            id="icon-instagram-2"
-                            width="32"
-                            height="32"
-                            viewBox="0 0 32 32"
-                            x="0"
-                            y="352"
-                          >
-                            <circle
-                              class="team-sm-icons-bg"
-                              r="22"
-                              cx="22 "
-                              cy="22"
-                            />
+                      <ul class="sm-icons">
+                        <li class="sm-circle-bg">
+                          <svg class="icon-ig" width="20" height="20">
+                            <use href="images/icons.svg#icon-instagram-2"></use>
                           </svg>
                         </li>
-                        <li>
-                          <svg>
-                            <circle
-                              class="team-sm-icons-bg"
-                              r="22"
-                              cx="22 "
-                              cy="22"
-                            />
+                        <li class="sm-circle-bg">
+                          <svg class="icon-ig">
+                            <use href="images/icons.svg#icon-twitter"></use>
                           </svg>
                         </li>
-                        <li>
-                          <svg>
-                            <circle
-                              class="team-sm-icons-bg"
-                              r="22"
-                              cx="22 "
-                              cy="22"
-                            />
+                        <li class="sm-circle-bg">
+                          <svg class="icon-ig">
+                            <use href="images/icons.svg#icon-fb"></use>
                           </svg>
                         </li>
-                        <li>
-                          <svg>
-                            <circle
-                              class="team-sm-icons-bg"
-                              r="22"
-                              cx="22 "
-                              cy="22"
-                            />
+                        <li class="sm-circle-bg">
+                          <svg class="icon-ig">
+                             <use href="images/icons.svg#icon-linkedin-1"></use>
                           </svg>
                         </li>
                       </ul>
@@ -263,19 +238,56 @@
           <h3 class="our-clients-header">Nasi klienci</h3>
           <ul class="our-clients-list">
             <li>
-              <div class="our-clients-item"></div>
+              <div class="our-clients-item">
+                <svg class="icon-ig">
+                  <use href="images/icons.svg#icon-group1"></use>
+                </svg>
+              </div>
             </li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>
+              <div class="our-clients-item">
+                <svg class="icon-ig" height="46" width="41">
+                  <use href="images/icons.svg#icon-group2"></use>
+                </svg>
+              </div>
+            </li>
+            <li>
+              <div class="our-clients-item">
+                <svg class="icon-ig" height="41" width="43">
+                  <use href="images/icons.svg#icon-group3"></use>
+                </svg>
+              </div>
+            </li>
+            <li>
+              <div class="our-clients-item">
+                <svg class="icon-ig" height="40" width="84">
+                  <use href="images/icons.svg#icon-group4"></use>
+                </svg>
+              </div>
+            </li>
+            <li>
+              <div class="our-clients-item">
+                <svg class="icon-ig" height="45" width="62">
+                  <use href="images/icons.svg#icon-group5"></use>
+                </svg>
+              </div>
+            </li>
+            <li>
+              <div class="our-clients-item">
+                <svg class="icon-ig" height="44" width="94">
+                  <use href="images/icons.svg#icon-group6"></use>
+                </svg>
+              </div>
+            </li>
           </ul>
         </div>
       </div>
     </main>
     <footer>
-      <div class="footer-container">
+            <div class="footer-container">
+        <section class="footer-section">
+        <ul class="footer-section-list">
+          <li>
         <div class="container">
           <a class="webstudio-link-2" href="index.html"
             ><span>Web</span>Studio</a
@@ -291,15 +303,36 @@
               <a class="phone" href="tel:+48111111111">+48 111 111 111</a>
             </li>
           </ul>
-          <div>DOŁĄCZ DO NAS</div>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
+          </li>
+          <li>
+          <div class="join-us">DOŁĄCZ DO NAS</div>
+          <ul class="join-us-list">
+                        <li class="footer-sm-circle-bg">
+                          <svg class="icon-ig" width="20" height="20">
+                            <use href="images/icons.svg#icon-instagram-2"></use>
+                          </svg>
+                        </li>
+                        <li class="footer-sm-circle-bg" width="20" height="20">
+                          <svg class="icon-ig">
+                            <use href="images/icons.svg#icon-twitter"></use>
+                          </svg>
+                        </li>
+                        <li class="footer-sm-circle-bg" width="20" height="20">
+                          <svg class="icon-ig">
+                            <use href="images/icons.svg#icon-fb"></use>
+                          </svg>
+                        </li>
+                        <li class="footer-sm-circle-bg" width="20" height="20">
+                          <svg class="icon-ig">
+                             <use href="images/icons.svg#icon-linkedin-1"></use>
+                          </svg>
+                        </li>
+                      </ul>
+          </li>
         </div>
       </div>
+      </ul>
+      </section>
     </footer>
   </body>
 </html>
