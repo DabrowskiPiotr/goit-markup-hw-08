@@ -198,11 +198,15 @@ body {
   text-decoration: none;
 }
 
-.mail:hover {
+.mail:hover,
+.mail:focus,
+.phone:hover,
+.phone:focus {
   color: var(--active-link-color);
+  cursor: pointer;
 }
 
-.phone:focus {
+ {
   color: var(--active-link-color);
 }
 
@@ -599,12 +603,6 @@ address {
 .our-clients-item:focus {
   border: 1px solid #2196f3;
   fill: #2196f3;
-}
-
-.contact-list:hover {
-  fill: #2196f3;
-  border-color: #2196f3;
-  cursor: pointer;
 }
 
 .join-us {
