@@ -16,7 +16,7 @@
     />
     <title>Portfolio</title>
   </head>
-  <body class="body-center">
+    <body>
     <header class="header-section">
       <div class="container">
         <div class="header-navigation">
@@ -34,12 +34,20 @@
           <ul class="contact-list">
             <li>
               <a class="mail" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
+                ><svg width="16" height="12">
+                  <use href="images/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
             </li>
 
             <li>
-              <a class="phone" href="tel:+48111111111">+48 111 111 111</a>
+              <a class="phone" href="tel:+48111111111">
+                <svg width="10" height="16">
+                  <use href="images/icons.svg#icon-smartphone"></use>
+                </svg>
+                +48 111 111 111</a
+              >
             </li>
           </ul>
         </div>
@@ -207,8 +215,11 @@
       </div>
     </main>
 
-    <footer>
-      <div class="footer-container">
+     <footer>
+            <div class="footer-container">
+        <section class="footer-section">
+        <ul class="footer-section-list">
+          <li>
         <div class="container">
           <a class="webstudio-link-2" href="index.html"
             ><span>Web</span>Studio</a
@@ -224,8 +235,36 @@
               <a class="phone" href="tel:+48111111111">+48 111 111 111</a>
             </li>
           </ul>
+          </li>
+          <li>
+          <div class="join-us">DOŁĄCZ DO NAS</div>
+          <ul class="join-us-list">
+                        <li class="footer-sm-circle-bg">
+                          <svg width="20" height="20">
+                            <use href="images/icons.svg#icon-instagram-2"></use>
+                          </svg>
+                        </li>
+                        <li class="footer-sm-circle-bg">
+                          <svg width="20" height="20">
+                            <use href="images/icons.svg#icon-twitter"></use>
+                          </svg>
+                        </li>
+                        <li class="footer-sm-circle-bg">
+                          <svg width="20" height="20">
+                            <use href="images/icons.svg#icon-fb"></use>
+                          </svg>
+                        </li>
+                        <li class="footer-sm-circle-bg">
+                          <svg width="20" height="20">
+                             <use href="images/icons.svg#icon-linkedin-1"></use>
+                          </svg>
+                        </li>
+                      </ul>
+          </li>
         </div>
       </div>
+      </ul>
+      </section>
     </footer>
   </body>
 </html>
