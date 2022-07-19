@@ -668,3 +668,16 @@ address {
 .footer-sm-circle-bg:focus {
 background: #2196f3;
 }
+
+.sm-icon {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+
+.sm-icon:hover,
+.sm-icon:focus {
+  width: 20px;
+  height: 20px;
+  fill: #FFFFFF;
+}
