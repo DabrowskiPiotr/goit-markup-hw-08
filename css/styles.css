@@ -668,7 +668,7 @@ address {
 }
 
 .sm-icon {
-  fill: #afb1b8;
+  fill: hsl(0, 83%, 45%);
 }
 
 .sm-icon:hover,
