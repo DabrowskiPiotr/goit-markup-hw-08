@@ -595,14 +595,13 @@ address {
   border-radius: 4px;
 }
 .our-clients-item:hover,
-.our-clients-item:focus
- {
+.our-clients-item:focus {
   border: 1px solid #2196f3;
 }
 
 .icon-ig:hover,
 .icon-ig:focus {
-  fill:#2196f3;
+  fill: #2196f3;
 }
 .icon-ig {
   width: 106px;
@@ -636,7 +635,6 @@ address {
   margin-top: 20px;
   margin-left: 70px;
   padding: 0px;
-  
 }
 
 .sm-circle-bg {
@@ -666,18 +664,14 @@ address {
 
 .footer-sm-circle-bg:hover,
 .footer-sm-circle-bg:focus {
-background: #2196f3;
+  background: #2196f3;
 }
 
 .sm-icon {
-  width: 20px;
-  height: 20px;
   fill: #afb1b8;
 }
 
 .sm-icon:hover,
 .sm-icon:focus {
-  width: 20px;
-  height: 20px;
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
