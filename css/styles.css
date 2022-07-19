@@ -146,6 +146,8 @@ button:focus {
   color: var(--mail-phone-color);
   text-decoration: none;
   fill: var(--icon-color);
+  display: flex;
+  gap: 10px;
 }
 
 .phone {
