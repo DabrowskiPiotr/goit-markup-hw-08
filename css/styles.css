@@ -187,6 +187,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--mail-phone-color);
   text-decoration: none;
+  fill: #afb1b8;
 }
 
 .phone {
@@ -196,14 +197,18 @@ body {
   letter-spacing: 0.02em;
   color: var(--mail-phone-color);
   text-decoration: none;
+  fill: #afb1b8;
 }
 
 .mail:hover,
 .mail:focus,
 .phone:hover,
-.phone:focus {
+.phone:focus,
+a:hover,
+a:focus {
   color: var(--active-link-color);
   cursor: pointer;
+  fill: #2196f3;
 }
 
  {
