@@ -148,7 +148,6 @@ button:focus {
   fill: var(--icon-color);
   display: flex;
   gap: 10px;
-  align-items: flex-end;
 }
 
 .phone {
@@ -161,7 +160,6 @@ button:focus {
   fill: var(--icon-color);
   display: flex;
   gap: 10px;
-  align-items: flex-end;
 }
 
 .agency:hover,
