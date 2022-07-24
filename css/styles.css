@@ -10,6 +10,8 @@
   --main-space-sections: 94px;
   --interior-width-container: 1200px;
   --icon-color: #afb1b8;
+  --link-transition-duration: 250ms;
+  --link-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 * ::before,
@@ -31,6 +33,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 1600px;
+  margin-top: 0px;
 }
 
 .list {
@@ -42,30 +45,70 @@ button:hover,
 button:focus {
   background-color: var(--active-link-color);
   color: #ffffff;
+  transition-duration: var(--link-transition-duration);
+  transition-timing-function: var(--link-transition-timing-function);
 }
 
 .container {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: auto;
 }
 
 /*header*/
 
 .header-section {
   border-bottom: 1px solid #ececec;
+  height: 80px;
   display: flex;
   justify-content: center;
 }
 
+.header-navigation {
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
 .navigation {
-  display: inline-flex;
+  display: flex;
   margin-left: 93px;
+  align-items: center;
+  padding-top: 32px;
+}
+
+.contact-list {
+  display: flex;
+  align-items: center;
+  padding-left: 345px;
+  gap: 30px;
+  list-style: none;
+  margin: 0px;
 }
 
 .list-nav {
   list-style: none;
   display: flex;
   gap: 40px;
+  margin: 0px;
+}
+
+.list-nav li {
+  padding-bottom: 28px;
+}
+
+.list-nav .highlights {
+  position: relative;
+}
+
+.list-nav .highlights::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  bottom: 0px;
+  background: #2196f3;
+  border-radius: 2px;
 }
 
 .webstudio-link-1 {
@@ -102,15 +145,6 @@ button:focus {
   color: #2196f3;
 }
 
-.contact-list {
-  display: inline-flex;
-  padding-left: 345px;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  gap: 30px;
-  list-style: none;
-}
-
 .agency {
   font-weight: 500;
   font-size: 14px;
@@ -118,6 +152,7 @@ button:focus {
   letter-spacing: 0.02em;
   color: var(--main-txt-color);
   text-decoration: none;
+  transition-property: color;
 }
 
 .portfolio {
@@ -127,6 +162,7 @@ button:focus {
   letter-spacing: 0.02em;
   color: var(--main-txt-color);
   text-decoration: none;
+  transition-property: color;
 }
 
 .contact {
@@ -136,6 +172,7 @@ button:focus {
   letter-spacing: 0.02em;
   color: var(--main-txt-color);
   text-decoration: none;
+  transition-property: color;
 }
 
 .mail {
@@ -148,6 +185,7 @@ button:focus {
   fill: var(--icon-color);
   display: flex;
   gap: 10px;
+  transition-property: color, fill;
 }
 
 .phone {
@@ -160,6 +198,7 @@ button:focus {
   fill: var(--icon-color);
   display: flex;
   gap: 10px;
+  transition-property: color, fill;
 }
 
 .agency:hover,
@@ -176,6 +215,8 @@ button:focus {
   cursor: pointer;
   fill: var(--active-link-color);
   cursor: pointer;
+  transition-duration: var(--link-transition-duration);
+  transition-timing-function: var(--link-transition-timing-function);
 }
 
 /*footer section*/
@@ -215,12 +256,15 @@ address {
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
   fill: #ffffff;
+  transition-property: background;
 }
 
 .footer-sm-circle-bg:hover,
 .footer-sm-circle-bg:focus {
   background: var(--active-link-color);
   cursor: pointer;
+  transition-duration: var(--link-transition-duration);
+  transition-timing-function: var(--link-transition-timing-function);
 }
 
 .join-us {
@@ -333,6 +377,29 @@ address {
   justify-content: center;
 }
 
+.what-we-do-label {
+  width: 370px;
+}
+
+.label-background {
+  position: relative;
+  height: 294px;
+}
+
+.label-background .what-we-do-label {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  padding: 27px 0;
+  background-color: #2f303a80;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
 /*our team section*/
 
 .name {
@@ -443,6 +510,7 @@ address {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: var(--icon-color);
+  transition-property: border, fill;
 }
 
 .our-clients-item:hover,
@@ -450,6 +518,8 @@ address {
   border: 1px solid var(--active-link-color);
   fill: var(--active-link-color);
   cursor: pointer;
+  transition-duration: var(--link-transition-duration);
+  transition-timing-function: var(--link-transition-timing-function);
 }
 
 .sm-circle-bg {
@@ -460,6 +530,7 @@ address {
   align-items: center;
   border-radius: 50%;
   fill: var(--icon-color);
+  transition-property: background-color, fill;
 }
 
 .sm-circle-bg:hover,
@@ -467,6 +538,8 @@ address {
   background-color: var(--active-link-color);
   fill: #ffffff;
   cursor: pointer;
+  transition-duration: var(--link-transition-duration);
+  transition-timing-function: var(--link-transition-timing-function);
 }
 
 /*H1 section*/
@@ -493,7 +566,6 @@ address {
   text-transform: uppercase;
   color: #ffffff;
   width: 700px;
-  padding-top: 200px;
 }
 
 .button-service {
@@ -510,6 +582,67 @@ address {
   color: #ffffff;
   cursor: pointer;
   display: block;
+}
+
+.backdrop {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 500ms, visibility 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal {
+  position: fixed;
+  width: 528px;
+  height: 581px;
+  top: 221px;
+  left: 41%;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.x {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 8px;
+  margin-right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #0000001a;
+  background-color: #ffffff;
+}
+
+@keyframes modal-in {
+  0% {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}
+
+@keyframes modal-out {
+  0% {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0);
+  }
 }
 
 /*portfolio - table section*/
@@ -533,6 +666,7 @@ address {
   line-height: 1.62;
   letter-spacing: 0.03em;
   cursor: pointer;
+  transition-property: box-shadow, background;
 }
 .portfolio-button-2 {
   width: 93px;
@@ -545,6 +679,7 @@ address {
   line-height: 1.62;
   letter-spacing: 0.03em;
   cursor: pointer;
+  transition-property: box-shadow, background;
 }
 
 .portfolio-button-3 {
@@ -558,6 +693,7 @@ address {
   line-height: 1.62;
   letter-spacing: 0.03em;
   cursor: pointer;
+  transition-property: box-shadow, background;
 }
 
 .portfolio-button-4 {
@@ -571,6 +707,7 @@ address {
   line-height: 1.62;
   letter-spacing: 0.03em;
   cursor: pointer;
+  transition-property: box-shadow, background;
 }
 
 .portfolio-button-5 {
@@ -584,6 +721,7 @@ address {
   line-height: 1.62;
   letter-spacing: 0.03em;
   cursor: pointer;
+  transition-property: box-shadow, background;
 }
 
 .portfolio-button-1:hover,
@@ -598,7 +736,8 @@ address {
 .portfolio-button-5:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
+  transition-duration: var(--link-transition-duration);
+  transition-timing-function: var(--link-transition-timing-function);
 }
 
 .list-project-table {
@@ -622,23 +761,55 @@ address {
 }
 
 .project-card {
+  position: relative;
   width: 370px;
   height: 404px;
   background: var(--cards-bg-color);
   margin: 0px;
   border: 1px solid #eeeeee;
+  transition-property: box-shadow;
+  overflow: hidden;
+}
+
+.project-card figcaption {
+  position: relative;
+  overflow: hidden;
+  height: 110px;
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+}
+
+.project-card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translatey(100%);
+  transition: transform 250ms ease;
+}
+
+.project-card .project-card-overlay > p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  padding-top: 49px;
+  padding-left: 24px;
 }
 
 .project-card:hover,
-.project-card:focus {
-  width: 370px;
-  height: 404px;
-  background: var(--cards-bg-color);
-  margin: 0px;
+.project-card:focus,
+.project-card:hover .project-card-overlay {
   cursor: pointer;
-  border: 1px solid #eeeeee;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition-duration: var(--link-transition-duration);
+  transition-timing-function: var(--link-transition-timing-function);
+  transform: translatey(0%);
 }
 
 .main-portfolio {

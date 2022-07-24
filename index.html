@@ -26,7 +26,7 @@
           >
           <nav class="navigation">
             <ul class="list-nav">
-              <li><a class="agency" href="index.html">Agencja</a></li>
+              <li class="highlights"><a class="agency" href="index.html">Agencja</a></li>
               <li><a class="portfolio" href="portfolio.html">Portfolio</a></li>
               <li><a class="contact" href="kontakt.html">Kontakt</a></li>
             </ul>
@@ -58,7 +58,8 @@
       <div class="main-container section">
         <div class="container">
           <h1 class="main-header">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-          <button type="button" class="button-service">Zamów usługę</button>
+          <button data-modal-open type="button" class="button-service">Zamów usługę</button>
+         
         </div>
       </div>
       <div class="feature-section section">
@@ -118,29 +119,33 @@
       <div class="what-we-do-section section">
         <h2 class="what-we-do-header">Czym się zajmujemy</h2>
         <ul class="image-list">
-          <li>
+          <li class="label-background">
             <img
+              class="img-wwd"
               src="images/box1.jpg"
               alt="hands on keybord"
               width="370"
               height="294"
             />
+            <p class="what-we-do-label">APLIKACJE KOMPUTEROWE</p>
           </li>
-          <li>
+          <li class="label-background">
             <img
               src="images/box2.jpg"
               alt="phone and laptop"
               width="370"
               height="294"
             />
+            <p class="what-we-do-label">APLIKACJE MOBILNE</p>
           </li>
-          <li>
+          <li class="label-background">
             <img
               src="images/box3.jpg"
               alt="graphic tablet"
               width="370"
               height="294"
             />
+            <p class="what-we-do-label">ROZWIĄZANIA GRAFICZNE</p>
           </li>
         </ul>
       </div>
@@ -407,5 +412,13 @@
       </ul>
       </section>
     </footer>
+  
+     <div class="backdrop in out is-hidden" data-modal>
+      <div class="modal">
+          <button class="x" type="button" data-modal-close>x</button>
+          </div>
+          </div>
+          
+    <script src="./js/modal.js"></script>
   </body>
 </html>
