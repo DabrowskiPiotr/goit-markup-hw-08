@@ -407,6 +407,16 @@
                         </li>
                       </ul>
           </li>
+          <li>
+          <form>
+  <label>
+   <span class="newsletter">ZAPISZ SIĘ DO NEWSLETTERA</span> <br>
+    <input class="e-mail-input" type="e-mail" name="e-mail" placeholder="E-mail"/>
+  </label>
+
+  <button class="submit" type="submit">Zapisz się</button>
+</form>
+          </li>
         </div>
       </div>
       </ul>
@@ -416,6 +426,30 @@
      <div class="backdrop in out is-hidden" data-modal>
       <div class="modal">
           <button class="x" type="button" data-modal-close>x</button>
+          <form>
+            <span>Zostaw swoje dane w formularzu poniżej</span> 
+            <form>
+  <label>
+    <span>Imię</span>
+    <input type="name" name="name" required />
+  </label>
+  <label>
+    <span>Telefon</span>
+    <input type="telephone" name="telephone" minlength="6" required/>
+  </label>
+  <label>
+    <span>E-mail</span>
+    <input type="e-mail" name="e-mail" required/>
+  </label>
+   <label>
+    <span>Komentarz</span>
+    <textarea name="comment" rows="7" placeholder="Wprowadź tekst" resize></textarea>
+  </label>
+  <label>
+    <input type="checkbox" name="statement" value="statement"/>
+  </label>
+            <button type="submit">Submit</button>
+          </form>
           </div>
           </div>
           
