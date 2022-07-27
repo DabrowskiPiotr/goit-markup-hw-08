@@ -1,4 +1,3 @@
-# goit-markup-hw-04
+# goit-markup-hw-06
 
-Praca domowa nr 4 - GoIT
-https://dabrowskipiotr.github.io/goit-markup-hw-04/
+Praca domowa nr 6 - GoIT
