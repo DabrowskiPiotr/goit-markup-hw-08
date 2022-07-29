@@ -409,12 +409,17 @@
           </li>
           <li>
           <form>
-  <label>
-   <span class="newsletter">ZAPISZ SIĘ DO NEWSLETTERA</span> <br>
+  <label class="submit-label"> 
+      <span class="newsletter">ZAPISZ SIĘ DO NEWSLETTERA</span>
     <input class="e-mail-input" type="e-mail" name="e-mail" placeholder="E-mail"/>
+  
   </label>
-
-  <button class="submit" type="submit">Zapisz się</button>
+<div class="submit-field">
+  <button class="submit" type="submit"><span class="submit-txt">Zapisz się</span></span></button>
+  <svg class="submit-icon" width="24" height="24">
+      <use href="images/icons.svg#icon-icon-send"></use>
+    </svg>
+    </div>
 </form>
           </li>
         </div>
@@ -429,34 +434,37 @@
           <form class="form-container">
             <span class="modal-header">Zostaw swoje dane w formularzu poniżej</span> 
             <form>
-  <label>
+  <label class="label-modal">
     <span class="label-name">Imię</span>
     <input type="name" class="input-form" name="name" required />
     <svg class="modal-icon" width="12" height="12">
       <use href="images/icons.svg#icon-person"></use>
     </svg>
   </label>
-  <label>
+  <label class="label-modal">
     <span class="label-name">Telefon</span>
     <input type="telephone" class="input-form" name="telephone" minlength="6" required/>
     <svg class="modal-icon" width="13" height="13">
       <use href="images/icons.svg#icon-phone1"></use>
     </svg>
   </label>
-  <label>
+  <label class="label-modal">
     <span class="label-name">E-mail</span>
     <input type="e-mail" class="input-form" name="e-mail" required/>
     <svg class="modal-icon" width="18" height="18">
       <use href="images/icons.svg#icon-mail"></use>
     </svg>
   </label>
-   <label>
+   <label class="label-modal">
     <span class="label-name">Komentarz</span>
-    <textarea name="comment" id="comment" class="input-form" placeholder="Wprowadź tekst"></textarea>
+    <textarea name="comment" class="textarea" placeholder="Wprowadź tekst"></textarea>
   </label>
   <div class="checkbox-form">
+    <svg class="modal-icon" width="18" height="18">
+      <use href="images/icons.svg#icon-tick"></use>
+    </svg>
     <input type="checkbox" class="checkbox-field" name="statement" value="statement"/>
-  <label class="checkbox-txt">Oświadczam iż akceptuję <a class="statment-link" href="regulations.html"> Regulamin </a> i <a class="statment-link" href="privacypolicy.html">Politykę Prywatności</a>.</label>
+  <label class="checkbox-txt">Oświadczam iż akceptuję&nbsp<a class="statment-link" href="regulations.html">Regulamin</a> &nbspi&nbsp<a class="statment-link" href="privacypolicy.html">Politykę Prywatności</a>.</label>
           </div>
   <div  class="sumbit-btn-container">
             <button type="submit" class="submit-btn">Wyślij</button>
