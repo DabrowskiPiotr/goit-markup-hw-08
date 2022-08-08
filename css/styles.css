@@ -778,22 +778,12 @@ address {
   margin-top: 2px;
   margin-right: 8px;
   transition: border-color 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--link-transition-timing-function);
 }
 
 .checkbox-sq:hover {
   border-color: var(--active-link-color);
 }
-/*
-
-.checkbox-field:hover,
-.checkbox-field:focus {
-}
-
-.checkbox-form input {
- 
-}
-*/
 
 .input-form:hover,
 .input-form:focus,
@@ -856,14 +846,6 @@ address {
   margin-bottom: 30px;
 }
 
-/*
-.checkbox-txt:before {
-  width: 16px;
-  height: 15px;
-  radius: 2px;
-  border: 1px solid #e9f321;
-}
-*/
 .checkbox-txt {
   display: flex;
   flex-direction: row;
