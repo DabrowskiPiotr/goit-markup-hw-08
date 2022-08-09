@@ -1,3 +1,3 @@
-# goit-markup-hw-06
+# goit-markup-hw-07
 
-Praca domowa nr 6 - GoIT
+Praca domowa nr 7 - GoIT
