@@ -47,6 +47,7 @@ button:focus {
   color: #ffffff;
   transition-duration: var(--link-transition-duration);
   transition-timing-function: var(--link-transition-timing-function);
+  cursor: pointer;
 }
 
 .container {
