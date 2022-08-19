@@ -1,0 +1,45 @@
+.clients {
+&__header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-align: center;
+  padding-top: $MainSpaceSections;
+  margin: 0px;
+}
+
+&__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 0px 15px 0px 15px;
+}
+
+&__list-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: $IconColor;
+  transition-property: border, fill;
+}
+
+&__list-item:hover,
+&__list-item:focus {
+  border: 1px solid $ActiveLinkColor;
+  fill:$ActiveLinkColor;
+  cursor: pointer;
+  transition-duration: $MainTransitionDuration;
+  transition-timing-function: $MainTransitionTimingFunction;
+}
+
+}
+

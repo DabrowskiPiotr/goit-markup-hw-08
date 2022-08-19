@@ -1,0 +1,111 @@
+.header {
+  border-bottom: 1px solid #ececec;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+
+  &__navigation {
+    height: 80px;
+    display: flex;
+    align-items: center;
+  }
+  &__studio-link {
+    color: #000000;
+    font-family: "Raleway";
+    font-size: 26px;
+    font-weight: 700;
+    text-decoration: none;
+    line-height: 1.19;
+  }
+  &__studio-link:hover {
+    color: #000000;
+  }
+
+  &__studio-link span {
+    color: $ActiveLinkColor;
+  }
+}
+
+.navigation {
+  display: flex;
+  margin-left: 93px;
+  align-items: center;
+  padding-top: 32px;
+
+  &__list {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0px;
+  }
+
+  &__list li {
+    padding-bottom: 28px;
+  }
+
+  &__list .highlights {
+    position: relative;
+  }
+
+  &__list .highlights::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    bottom: 0px;
+    background: $ActiveLinkColor;
+    border-radius: 2px;
+  }
+
+  &__list-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $MainTextColor;
+    text-decoration: none;
+    transition-property: color;
+  }
+
+  &__list-link:hover,
+  &__list-link:focus {
+    color: $ActiveLinkColor;
+    cursor: pointer;
+    fill: $ActiveLinkColor;
+    cursor: pointer;
+    transition-duration: $MainTransitionDuration;
+    transition-timing-function: $MainTransitionTimingFunction;
+  }
+}
+
+.contact-list {
+  display: flex;
+  align-items: center;
+  padding-left: 345px;
+  gap: 30px;
+  list-style: none;
+  margin: 0px;
+
+  &__contact {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $ContactsColor;
+    text-decoration: none;
+    fill: $IconColor;
+    display: flex;
+    gap: 10px;
+    transition-property: color, fill;
+  }
+  &__contact:hover,
+  &__contact:focus {
+    color: $ActiveLinkColor;
+    cursor: pointer;
+    fill: $ActiveLinkColor;
+    cursor: pointer;
+    transition-duration: $MainTransitionDuration;
+    transition-timing-function: $MainTransitionTimingFunction;
+  }
+}

@@ -1,0 +1,42 @@
+.feature {
+  margin-left: auto;
+  margin-right: auto;
+  width: $InteriorWidthContainer;
+  display: block;
+  justify-content: center;
+
+&__list {
+  list-style: none;
+  display: inline-flex;
+  gap: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+&__icon-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+
+&__header {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+
+&__description {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $FeaturesTxtColor;
+  width: 270px;
+}
+}
+

@@ -1,0 +1,53 @@
+* ::before,
+::after {
+  box-sizing: border-box;
+}
+
+.section {
+  margin-bottom: $MainSpaceSections;
+}
+
+.section-2 {
+  margin-top: $MainSpaceSections;
+}
+
+body {
+  font-family: "Roboto", "Helvetica", "Arial", "sans-serif";
+  background: $MainBgColor;
+  color: $MainTextColor;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1600px;
+  margin-top: 0px;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+}
+
+button:hover,
+button:focus {
+  background-color: $ActiveLinkColor;
+  color: #ffffff;
+  transition-duration: $MainTransitionDuration;
+  transition-timing-function: $MainTransitionTimingFunction;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+@import "./utils/vars";
+@import "./components/page-header-section";
+@import "./components/page-footer-section";
+@import "./components/main-header-section";
+@import "./components/feature-section";
+@import "./components/development-section";
+@import "./components/team-section";
+@import "./components/clients-section";
+@import "./components/modal";
+@import "./components/portfolio-btn-section";
+@import "./components/portfolio-project-section";
