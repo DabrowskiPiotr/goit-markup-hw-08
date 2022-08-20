@@ -1,3 +1,16 @@
+@import "./utils/vars";
+@import "./components/page-header-section";
+@import "./components/page-footer-section";
+@import "./components/main-header-section";
+@import "./components/feature-section";
+@import "./components/development-section";
+@import "./components/team-section";
+@import "./components/clients-section";
+@import "./components/modal";
+@import "./components/portfolio-btn-section";
+@import "./components/portfolio-project-section";
+
+
 * ::before,
 ::after {
   box-sizing: border-box;
@@ -40,14 +53,4 @@ button:focus {
   margin: auto;
 }
 
-@import "./utils/vars";
-@import "./components/page-header-section";
-@import "./components/page-footer-section";
-@import "./components/main-header-section";
-@import "./components/feature-section";
-@import "./components/development-section";
-@import "./components/team-section";
-@import "./components/clients-section";
-@import "./components/modal";
-@import "./components/portfolio-btn-section";
-@import "./components/portfolio-project-section";
+
