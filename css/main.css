@@ -261,7 +261,9 @@ address {
 .main {
   height: 600px;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 100%, rgb(47, 48, 58) 100%), url("../images/img14.jpg");
-  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
   display: flex;
   justify-content: center;
 }
@@ -860,9 +862,6 @@ body {
   font-family: "Roboto", "Helvetica", "Arial", "sans-serif";
   background: #ffffff;
   color: #212121;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1600px;
   margin-top: 0px;
 }
 
