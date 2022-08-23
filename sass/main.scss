@@ -10,7 +10,6 @@
 @import "./components/portfolio-btn-section";
 @import "./components/portfolio-project-section";
 
-
 * ::before,
 ::after {
   box-sizing: border-box;
@@ -24,12 +23,11 @@
   margin-top: $MainSpaceSections;
 }
 
-body {
+ body {
   font-family: "Roboto", "Helvetica", "Arial", "sans-serif";
   background: $MainBgColor;
   color: $MainTextColor;
-  margin-top: 0px;
-}
+  margin-top: 0px;}
 
 .list {
   list-style: none;
@@ -46,7 +44,39 @@ button:focus {
 }
 
 .container {
-  max-width: 1200px;
-  margin: auto;
+  width: 100%;
 }
 
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  body {
+  width: 480px;
+}
+  
+  .container {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .container {
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+  width: 1600px;
+}
+  
+  .container {
+    margin: auto;
+  }
+}
+
+/*
+.container {
+  max-width: 1200px;
+  min-width: 320px;
+  margin: auto;
+}
+*/

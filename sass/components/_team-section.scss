@@ -6,90 +6,221 @@
   display: flex;
   justify-content: center;
 
-&__header {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-  text-align: center;
-  padding-top: $MainSpaceSections;
-  margin: 0px;
+  &__header {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-align: center;
+    padding-top: $MainSpaceSections;
+    margin: 0px;
+  }
+
+  &__section {
+    margin-top: 50px;
+    padding-bottom: $MainSpaceSections;
+    width: $MobileInteriorWidthContainer;
+  }
+
+  &__list {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    display: block;
+    justify-content: center;
+  }
+
+  &__card {
+    background: $CardsBgColor;
+    width: 450px;
+    height: 622px;
+    text-align: center;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    margin: 0px;
+    margin-bottom: $MobileMainSpaceSections;
+  }
+
+  &__name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+  }
+
+  &__title {
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: $CardsTxtColor;
+  }
+
+  &__icon-list {
+    list-style: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 16px 122px 24px 122px;
+    padding: 0px;
+  }
+
+  &__icons {
+    width: 206px;
+    height: 56px;
+  }
+
+  &__icon-bg {
+    width: 44px;
+    height: 44px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    fill: $IconColor;
+    transition-property: background-color, fill;
+  }
+
+  &__icon-bg:hover,
+  &__icon-bg:focus {
+    background-color: $ActiveLinkColor;
+    fill: #ffffff;
+    cursor: pointer;
+    transition-duration: $MainTransitionDuration;
+    transition-timing-function: $MainTransitionTimingFunction;
+  }
 }
 
-&__section {
-  margin-top: 50px;
-  padding-bottom: $MainSpaceSections;
-  width: $InteriorWidthContainer;
+@media screen and (min-width: 481px) and (max-width: 767px) {
 }
 
-&__list {
-  padding: 0px;
-  margin: 0px;
-  list-style: none;
+@media screen and (min-width: 768px) {
+  .team {
+    &__header {
+      font-size: 36px;
+    }
+
+    &__section {
+      width: 1600px;
+    }
+
+    &__list {
+      display: flex;
+      gap: 30px;
+    }
+
+    &__card {
+      width: 270px;
+      height: 428px;
+    }
+
+    &__icon-list {
+      width: 206px;
+      margin: 16px 32px 0px 32px;
+    }
+
+    &__icons {
+      width: 206px;
+      height: 56px;
+    }
+
+    &__icon-bg {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+/* .team {
+  background: $PortfolioBtnColor;
+  margin-top: $MainSpaceSections;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
-  gap: 30px;
   justify-content: center;
-}
 
-&__card {
-  background: $CardsBgColor;
-  width: 270px;
-  height: 428px;
-  text-align: center;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-  margin: 0px;
-}
+  &__header {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-align: center;
+    padding-top: $MainSpaceSections;
+    margin: 0px;
+  }
 
-&__name {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-}
+  &__section {
+    margin-top: 50px;
+    padding-bottom: $MainSpaceSections;
+    width: $InteriorWidthContainer;
+  }
 
-&__title {
-  font-size: 16px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: $CardsTxtColor;
-}
+  &__list {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+  }
 
-&__icon-list {
-  list-style: none;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  margin-top: 16px;
-}
+  &__card {
+    background: $CardsBgColor;
+    width: 270px;
+    height: 428px;
+    text-align: center;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    margin: 0px;
+  }
 
-&__icons {
-  width: 206px;
-  height: 56px;
-}
+  &__name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+  }
 
-&__icon-bg {
-  width: 40px;
-  height: 40px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  fill: $IconColor;
-  transition-property: background-color, fill;
-}
+  &__title {
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: $CardsTxtColor;
+  }
 
-&__icon-bg:hover,
-&__icon-bg:focus {
-  background-color: $ActiveLinkColor;
-  fill: #ffffff;
-  cursor: pointer;
-  transition-duration: $MainTransitionDuration;
-  transition-timing-function: $MainTransitionTimingFunction;
-}
+  &__icon-list {
+    list-style: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 16px;
+  }
 
-}
+  &__icons {
+    width: 206px;
+    height: 56px;
+  }
 
+  &__icon-bg {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    fill: $IconColor;
+    transition-property: background-color, fill;
+  }
 
+  &__icon-bg:hover,
+  &__icon-bg:focus {
+    background-color: $ActiveLinkColor;
+    fill: #ffffff;
+    cursor: pointer;
+    transition-duration: $MainTransitionDuration;
+    transition-timing-function: $MainTransitionTimingFunction;
+  }
+} */

@@ -1,42 +1,110 @@
 .feature {
   margin-left: auto;
   margin-right: auto;
+  width: $MobileInteriorWidthContainer;
+  display: block;
+  justify-content: center;
+
+  &__list {
+    list-style: none;
+    display: block;
+    gap: 30px;
+    justify-content: center;
+    padding: 0;
+  }
+
+  &__icon-bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    height: 120px;
+    background: #f5f4fa;
+    margin-bottom: 30px;
+    border-radius: 4px;
+  }
+
+  &__header {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-align: center;
+  }
+
+  &__description {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $FeaturesTxtColor;
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+}
+
+
+@media screen and (min-width: 768px) {
+  .feature {
+    width: $InteriorWidthContainer;
+
+    &__list {
+      display: inline-flex;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    &__icon-bg {
+      width: 270px;
+      height: 120px;
+    }
+
+    &__description {
+      width: 270px;
+    }
+  }
+}
+
+/*
+.feature {
+  margin-left: auto;
+  margin-right: auto;
   width: $InteriorWidthContainer;
   display: block;
   justify-content: center;
 
-&__list {
-  list-style: none;
-  display: inline-flex;
-  gap: 30px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
+  &__list {
+    list-style: none;
+    display: inline-flex;
+    gap: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 
-&__icon-bg {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 270px;
-  height: 120px;
-  background: #f5f4fa;
-  margin-bottom: 30px;
-  border-radius: 4px;
-}
+  &__icon-bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    background: #f5f4fa;
+    margin-bottom: 30px;
+    border-radius: 4px;
+  }
 
-&__header {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-}
+  &__header {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+  }
 
-&__description {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: $FeaturesTxtColor;
-  width: 270px;
-}
-}
-
+  &__description {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $FeaturesTxtColor;
+    width: 270px;
+  }
+} */
