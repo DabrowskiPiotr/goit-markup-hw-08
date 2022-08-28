@@ -24,7 +24,17 @@
           <a class="header__studio-link" href="index.html"
             ><span>Web</span>Studio</a
           >
-          <nav class="navigation">
+      <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+           <svg width="24" height="16">
+                  <use href="images/icons.svg#icon-menu-btn"></use>
+                </svg>
+        </button>
+
+        <nav class="navigation">
             <ul class="navigation__list">
               <li class="highlights"><a class="navigation__list-link" href="index.html">Agencja</a></li>
               <li><a class="navigation__list-link" href="portfolio.html">Portfolio</a></li>
@@ -51,6 +61,42 @@
               >
             </li>
           </ul>
+     </div> 
+
+<div class="menu-container js-menu-container mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg width="19" height="19">
+                  <use href="images/icons.svg#icon-close-btn"></use>
+                </svg>
+      </button>
+<div class="mobile-container">
+      <ul class="mobile-menu">
+        <li><a href="index.html" class="link">Agencja</a></li>
+        <li><a href="portfolio.html" class="link">Portfolio</a></li>
+        <li><a href="kontakt.html" class="link">Kontakt</a></li>
+      </ul>  
+      
+      <ul class="mobile-menu">
+        <li>   <a class="link-2" href="tel:+48111111111">+48 111 111 111</a
+              ></li>
+        <li><a class="link-2 href="mailto:info@devstudio.com"
+                >info@devstudio.com</a></li>
+      </ul>
+    </div>
+</div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
+      
+
+
+
+
+          
         </div>
       </div>
     </header>
@@ -460,6 +506,7 @@
             </form>
   </div>
     <script src="./js/modal.js"></script>
+
   </body>
 </html>
 

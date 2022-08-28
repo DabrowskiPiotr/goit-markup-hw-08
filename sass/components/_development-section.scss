@@ -1,6 +1,61 @@
 
+.development {
+    width: $InteriorWidthContainer;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+    justify-content: center;
 
-@media screen and (min-width: 768px) {
+    &__header {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.16;
+      letter-spacing: 0.03em;
+      text-align: center;
+      margin: 0px;
+    }
+
+    &__list {
+      padding: 0px;
+      list-style: none;
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      margin-top: 50px;
+      margin-bottom: 0px;
+    }
+
+    &__label {
+      position: relative;
+      height: 294px;
+    }
+
+    &__label-header {
+      width: 370px;
+    }
+
+    &__label &__label-header {
+      position: absolute;
+      bottom: 0;
+      margin: 0;
+      padding: 27px 0;
+      background-color: #2f303a80;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 16px;
+      text-align: center;
+      letter-spacing: 0.03em;
+      color: $MainBgColor;
+    }
+  }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .development {
+    display: none;
+}}
+
+
+@media screen and (min-width: 1200px)  {
 
 .development {
     width: $InteriorWidthContainer;

@@ -5,10 +5,11 @@
   justify-content: center;
 
   &__navigation {
-    height: 80px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
+  
   &__studio-link {
     color: #000000;
     font-family: "Raleway";
@@ -24,10 +25,27 @@
   &__studio-link span {
     color: $ActiveLinkColor;
   }
+
+  &__menu-btn {
+    margin-left: 284px;
+    fill: $MainTextColor;
+    background-color: #fff0;
+    border: none;
+  }
+   &__menu-btn:hover,
+  &__menu-btn:focus {
+    fill: $ActiveLinkColor;
+    cursor: pointer;
+    background-color: #fff0;
+    border: none;
+    transition-duration: $MainTransitionDuration;
+    transition-timing-function: $MainTransitionTimingFunction;
+  }
+ 
 }
 
 .navigation {
-  display: flex;
+  display: none;
   margin-left: 93px;
   align-items: center;
   padding-top: 32px;
@@ -80,7 +98,7 @@
 }
 
 .contact-list {
-  display: flex;
+  display: none;
   align-items: center;
   padding-left: 345px;
   gap: 30px;
@@ -108,4 +126,22 @@
     transition-duration: $MainTransitionDuration;
     transition-timing-function: $MainTransitionTimingFunction;
   }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px){
+}
+
+@media only screen and (min-width: 1200px) {
+
+.header {
+&__menu-btn {
+display:none;}}
+
+.navigation {
+  display: flex;
+  }
+
+.contact-list {
+  display: flex;
+}
 }
